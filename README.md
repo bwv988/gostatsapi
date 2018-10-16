@@ -4,6 +4,8 @@ This is my first attempt at learning the Go programming language.
 
 For this purpose, I've decided to implement a very simple REST server which exposes an API to calculate summary statistics.
 
+<p align="center"><img src="/assets/img/server_demo.gif?raw=true"/></p
+
 ## Overview
 
 - Uses the awesome `chi` framework for routing & request handling in Go.
@@ -26,7 +28,8 @@ Run the following from the project's top-level directory:
 ```bash
 go get -u github.com/go-chi/chi
 go get -u github.com/go-chi/render
-go go get gonum.org/v1/gonum/...
+go get -u gonum.org/v1/gonum/...
+go get -u github.com/bwv988/gostatsapi/src/...
 
 cd src
 
@@ -40,11 +43,13 @@ cd test
 
 ## TODOs
 
-- [] Checking of boundary conditions and better error handling.
-- [] Implement dependency management for 3pp libs.
-- [] Improve documentation.
-- [] Use proper golang test framework instead of CURL.
-- [] Refactor package structure.
+- [x] Test example runs fine.
+- [ ] Refactor package structure.
+- [ ] Implement dependency management for packages (!)
+- [ ] Checking of boundary conditions and better error handling.
+- [ ] Improve documentation.
+- [ ] Use proper golang test framework instead of CURL.
+
 
 ## References
 - https://itnext.io/structuring-a-production-grade-rest-api-in-golang-c0229b3feedc
